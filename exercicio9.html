@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O peso ideal</title>
+    <link rel="icon" href="./">
+</head>
+<body>
+    <h1>Escolha o gênero</h1>
+    <select id="menu" onchange="CalcularPesoIdeal(this.value)">
+        <option value="ParaMulheres">Sou Mulher</option>
+        <option value="ParaHomens">Sou Homem</option>
+        
+    </select><br><br>
+
+    <label for="altura">Informe sua altura</label><br><br>
+    <input type="number" id="altura"/><br><br>
+
+    <button onclick="CalcularPesoIdeal()">Calcular</button>
+
+    <p id="Resultado"></p>
+    <script src="./exercício9.js"></script>
+
+</body>
+</html>
